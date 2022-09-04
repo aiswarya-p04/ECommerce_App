@@ -1,0 +1,46 @@
+<div class="login-container">
+  <div class="login-form">
+    <div class="form-group">
+      <label for="email">Email Id</label>
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input
+        type="text"
+        name="uname"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="Rpword"> Re-enter password</label>
+      <input
+        type="password"
+        name="Rpword"
+        class="form-control"
+        [(ngModel)]="Rpassword"
+      />
+    </div>
+    <div class="btn-container">
+      <!-- <div class="error">{{ errorMsg }}</div> -->
+      <button class="btn btn-dark" (click)="register()">Register</button>
+    </div>
+    <div class="login" (click)="login()">Already a member? Login!!</div>
+  </div>
+
+</div>
