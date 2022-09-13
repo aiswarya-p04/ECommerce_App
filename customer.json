@@ -1,0 +1,70 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "The Dark Knight",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 2,
+      "name": "Inception",
+      "email": "absc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 3,
+      "name": "Matrix",
+      "email": "abcdd@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 4,
+      "name": "Shawshank Redemption",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 5,
+      "name": "Avatar",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 6,
+      "name": "The Lord of the Rings",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 7,
+      "name": "Gladiator",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 8,
+      "name": "Titanic",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 9,
+      "name": "Terminator",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 10,
+      "name": "The Dark Knight Rises",
+      "email": "abc@gmail.com",
+      "password": "12344"
+    },
+    {
+      "id": 10,
+      "name": "Aiswarya",
+      "email": "aiswarya123p@gmail.com",
+      "password": "123"
+    }
+  ]
+}

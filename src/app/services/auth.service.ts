@@ -9,21 +9,16 @@ import { ICustomer } from '../shared/customer';
 export class AuthService {
 cust:any;
   constructor(private http:HttpClient) { }
-  // login(uname: string, pword: string) {
-  //   if (uname === "Aiswarya" && pword === "123")
-  //     return 200;
-  //   else
-  //     return 403;
-  // }
 
   loadLogin():Observable<ICustomer[]>{
-     return this.http.get<ICustomer[]>('http://localhost:4200/assets/data/customer.json').pipe(
+     return this.http.get<ICustomer[]>('http://localhost:3000/customer').pipe(
       catchError(this.handleError)
     );
     }
 
     register(cust: ICustomer[]): Observable<ICustomer[]> {
-      return this.http.post<ICustomer[]>('http://localhost:4200/assets/data/customer.json', cust)
+
+      return this.http.post<ICustomer[]>('http://localhost:3000/customer', cust)
 
     }
     private handleError(error: HttpErrorResponse) {
