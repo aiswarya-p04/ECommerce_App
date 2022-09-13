@@ -5,9 +5,14 @@
   position: relative;
 }
 
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
 .login-container .login-form {
   width: 500px;
-  height: 470px;
+  height: 400px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
