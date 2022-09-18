@@ -35,11 +35,11 @@ customer:ICustomer[]=[];
 
       if (res.length>0){
         this.router.navigate(['home']);
-        console.log(res)
+        // console.log(res)
       }
       else {
         this.errorMsg = "Wrong credentials";
-        console.log(res)
+        // console.log(res)
       }
     }
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class HomeComponent implements OnInit {
 cardItems:any;
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService, private router:Router) { }
 
   ngOnInit(): void {
     this.productService.getProduct().subscribe(data=>{
@@ -16,5 +17,9 @@ cardItems:any;
      console.log(this.cardItems);
   })
 
+}
+imgClick(id:any){
+  console.log(id,"Clicked!");
+this.router.navigate(['product',id])
 }
 }

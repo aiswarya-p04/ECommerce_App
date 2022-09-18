@@ -10,4 +10,8 @@ url='http://localhost:3000/products';
   getProduct(){
     return this.http.get(this.url);
   }
+//   getProductById(id:any){
+// console.log("From service",id)
+// return this.http.get(this.url)
+//   }
 }
