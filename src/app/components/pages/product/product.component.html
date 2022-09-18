@@ -1,1 +1,32 @@
 <app-navbar></app-navbar>
+<div class="product-container">
+  <div class="top">
+    <div class="left">
+      <div class="name">{{ prod?.name }}</div>
+      <div class="cover">
+        <img [src]="prod?.img" alt="" />
+      </div>
+    </div>
+    <div class="right">
+      <div class="title">Product Details</div>
+      <div class="rating-form">
+        <div class="form-group"><span>Name: </span>{{ prod?.name }}</div>
+        <div class="form-group">
+          <span>Price: </span>{{ prod?.price | currency }}
+        </div>
+        <div class="form-group"><span>Author: </span>{{ prod?.author }}</div>
+        <div class="form-group cap"><span>Type: </span>{{ prod?.type }}</div>
+        <div class="form-group cap">
+          <span>Category: </span>{{ prod?.category }}
+        </div>
+        <div class="form-group">
+          <span>Description: </span>{{ prod?.description }}
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-dark">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
