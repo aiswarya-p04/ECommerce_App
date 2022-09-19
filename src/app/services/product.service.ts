@@ -5,13 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductService {
-url='http://localhost:3000/products';
-  constructor(private http:HttpClient) { }
-  getProduct(){
+  url = 'http://localhost:3000/products';
+  constructor(private http: HttpClient) { }
+  getProduct() {
     return this.http.get(this.url);
   }
-//   getProductById(id:any){
-// console.log("From service",id)
-// return this.http.get(this.url)
-//   }
+
 }

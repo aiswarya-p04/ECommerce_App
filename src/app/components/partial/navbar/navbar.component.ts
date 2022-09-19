@@ -9,14 +9,17 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-  toGoHome(){
-this.router.navigate(['home']);
+  toGoHome() {
+    this.router.navigate(['home']);
   }
-  logout(){
+  logout() {
     this.router.navigate(['login']);
+  }
+  goToCart() {
+    this.router.navigate(['cart'])
   }
 }

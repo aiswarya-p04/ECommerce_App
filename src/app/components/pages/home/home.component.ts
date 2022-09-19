@@ -8,18 +8,18 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-cardItems:any;
-  constructor(private productService:ProductService, private router:Router) { }
+  cardItems: any;
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
-    this.productService.getProduct().subscribe(data=>{
-      this.cardItems=data;
-     console.log(this.cardItems);
-  })
+    this.productService.getProduct().subscribe(data => {
+      this.cardItems = data;
+      console.log(this.cardItems);
+    })
 
-}
-imgClick(id:any){
-  console.log(id,"Clicked!");
-this.router.navigate(['product',id])
-}
+  }
+  imgClick(id: any) {
+    console.log(id, "Clicked!");
+    this.router.navigate(['product', id])
+  }
 }

@@ -4,21 +4,23 @@
     <div class="cards">
       <div class="content" *ngFor="let item of cardItems">
         <div class="card col-md-3">
-        <img [src]="item.img" alt="Card image cap" (click)="imgClick(item.id)"/>
-        <div class="card-body">
-          <h5 class="card-title">{{ item.name }}</h5>
-          <p class="card-text">
-          <span class="card-title"> Author:</span> {{item.author}}
-          </p>
-          <p class="card-text">
-           <span class="card-title">Price: </span>{{item.price | currency}}
-           </p>
-          <button class="btn btn-primary">Add to cart</button>
+          <img
+            [src]="item.img"
+            alt="Card image cap"
+            (click)="imgClick(item.id)"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">
+              <span class="card-title"> Author:</span> {{ item.author }}
+            </p>
+            <p class="card-text">
+              <span class="card-title">Price: </span>{{ item.price | currency }}
+            </p>
+            <button class="btn btn-primary">Add to cart</button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
 </div>
-
-

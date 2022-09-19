@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 import { ICustomer } from 'src/app/shared/customer';
 
@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
   productData: any;
   prod: any;
 
-  constructor(private route: ActivatedRoute, private product: ProductService) { }
+  constructor(private route: ActivatedRoute, private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
@@ -30,5 +30,8 @@ export class ProductComponent implements OnInit {
       console.log("bla bla", this.prod)
     })
     // console.log("mil gya",this.prod);
+  }
+  goToCart() {
+    this.router.navigate(['cart']);
   }
 }

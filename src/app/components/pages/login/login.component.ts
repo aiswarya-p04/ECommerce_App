@@ -14,11 +14,11 @@ export class LoginComponent implements OnInit {
   errorMsg = "";
 
   constructor(private auth: AuthService, private router: Router) { }
-customer:ICustomer[]=[];
+  customer: ICustomer[] = [];
   ngOnInit(): void {
-    this.auth.loadLogin().subscribe(data=>{
-      this.customer=data;
-    // console.log(this.customer);
+    this.auth.loadLogin().subscribe(data => {
+      this.customer = data;
+      // console.log(this.customer);
 
     })
   }
@@ -27,13 +27,13 @@ customer:ICustomer[]=[];
       this.errorMsg = "Username cannot be empty";
     else if (this.password.trim().length == 0)
       this.errorMsg = "Password cannot be empty";
-      else {
-        // let res = this.auth.login(this.username, this.password);
-        // this.auth.loadLogin();
+    else {
+      // let res = this.auth.login(this.username, this.password);
+      // this.auth.loadLogin();
 
-        let res=this.customer.filter(cust=>cust.name===this.username && cust.password===this.password);
+      let res = this.customer.filter(cust => cust.name === this.username && cust.password === this.password);
 
-      if (res.length>0){
+      if (res.length > 0) {
         this.router.navigate(['home']);
         // console.log(res)
       }
@@ -43,7 +43,7 @@ customer:ICustomer[]=[];
       }
     }
   }
-  signup(){
+  signup() {
     this.router.navigate(['signup']);
   }
 }

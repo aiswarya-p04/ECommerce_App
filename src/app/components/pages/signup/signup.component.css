@@ -5,7 +5,7 @@
   position: relative;
 }
 
-h2{
+h2 {
   text-align: center;
   text-decoration: underline;
 }
@@ -46,11 +46,12 @@ h2{
   right: 0px;
   color: red;
 }
-.login{
+
+.login {
   cursor: pointer;
   color: #05a;
 }
 
-.login:hover{
+.login:hover {
   color: green;
 }
