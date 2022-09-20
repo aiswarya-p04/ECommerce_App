@@ -1,1 +1,49 @@
 <app-navbar></app-navbar>
+<div class="" *ngIf="true">
+  <div class="container">
+
+    <div class="card-table">
+      <div class="card-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+
+              <th>S.No</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td><button class="btn btn-danger">
+                Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="" *ngIf="false">
+  <div class="cart">
+    <h1>My Cart</h1>
+    <div class="empty">
+      <img src="../../../../assets/shopping-cart.svg" alt="cart image" />
+      <h3>Your cart is empty!</h3>
+      <h4>Add items to it now</h4>
+      <button class="btn btn-primary" (click)="shopNow()">Shop Now!</button>
+    </div>
+  </div>
+</div>
